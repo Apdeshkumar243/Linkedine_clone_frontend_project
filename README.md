@@ -5,7 +5,7 @@ This is a **frontend clone of LinkedIn**, designed and built using **HTML**, **C
 ---
 
 ## 📽️ Live Demo / Video Preview
-[![Watch Demo Video](page1.jpg)](https://youtu.be/nWOYMPHaRZo?si=EQWp5QOumifnW6I-)
+[![Watch Demo Video](page1.png)](https://youtu.be/nWOYMPHaRZo?si=EQWp5QOumifnW6I-)
 
 (https://youtu.be/nWOYMPHaRZo?si=EQWp5QOumifnW6I-)
 ---
