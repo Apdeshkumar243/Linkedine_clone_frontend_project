@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Linkdin-clone</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="navbar-content">
+      <div class="logo">
+        <img src="linkdine_logo.jpeg" alt="LinkedIn" />
+      </div>
+      
+      <div class="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search..." />
+      </div>
+      
+      <div class="nav-icons">
+        <div class="nav-icon">
+          <i class="fa-solid fa-house"></i>
+          <span>Home</span>
+        </div>
+        <div class="nav-icon">
+          <i class="fa-solid fa-user-group"></i>
+          <span>My Network</span>
+        </div>
+        <div class="nav-icon">
+          <i class="fa-solid fa-briefcase"></i>
+          <span>Jobs</span>
+        </div>
+        <div class="nav-icon">
+          <i class="fa-solid fa-comment-dots"></i>
+          <span>Messaging</span>
+        </div>
+        <div class="nav-icon">
+          <i class="fa-solid fa-bell"></i>
+          <span>Notifications</span>
+        </div>
+        <div class="nav-icon">
+          <i class="fa-solid fa-circle-user"></i>
+          <span>Sign in</span>
+        </div>
+        <div class="nav-icon">
+          <i class="fa-solid fa-th"></i>
+          <span>For Business</span>
+        </div>
+        <button id="btnn">Change Mode</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main content  -->
+  <div class="main-container">
+    <!-- Left sidebar -->
+    <div class="sidebar">
+      <div class="profile-card">
+        <div class="profile-header">
+          <div class="profile-pic"></div>
+        </div>
+        <div class="profile-info">
+          <div class="profile-name">
+            Apdesh Kumar
+            <i class="fa-solid fa-circle-check verified-icon"></i>
+          </div>
+          <div class="profile-title">Attended Indian Institute of Technology Jodhpur</div>
+          <div class="profile-location">Jodhpur, Rajasthan</div>
+          <div class="company-info">
+            <img src="iitj-logo.jpeg" alt="IIT Jodhpur" class="company-logo" />
+            <span>Indian Institute of Technology Jodhpur</span>
+          </div>
+         
+        </div>
+      </div>
+       <div id="viewer1">
+        <pre style="padding: 4px 4px 4px 6px;font-size: 15px; font-family: system-ui, -apple-system;">Profile viewers</pre>
+        <pre style="line-height: 3rem; padding: 4px 4px 4px 6px; font-size: 15px;font-family: system-ui, -apple-system;">View all analytics</pre>
+       </div>
+       <div id="viewer2">
+        <p style="color: #00000099; font-size: 14px; padding: 4px 4px 4px 6px;">Achieve your career goal with Premium</p>
+        <p style=" margin-left: 8px; font-family:system-ui, -apple-system;line-height: 8px; color: #000000E6;"><img src="gold.jpeg">Try for $0</p>
+       </div>
+        <div class="icun"> 
+            <ul class="menu">
+        <li class="menu-item">
+            <i class="fas fa-bookmark"></i>
+            Saved items
+        </li>
+        <li class="menu-item">
+            <i class="fas fa-users"></i>
+            Groups
+        </li>
+        <li class="menu-item">
+            <i class="fas fa-newspaper"></i>
+            Newsletters
+        </li>
+        <li class="menu-item">
+            <i class="fas fa-calendar-alt"></i>
+            Events
+        </li>
+    </ul>
+
+        </div>
+    </div>
+
+    <!-- main content -->
+    <div class="main-content">
+      <div class="post-composer">
+        <div class="post-input-row">
+          <div class="post-user-pic"></div>
+          <input type="text" class="post-input" placeholder="Start a post" />
+        </div>
+        <div class="post-options">
+          <div class="post-option">
+            <img src="video.jpeg" alt="Video" class="video-icon-img" />
+            <span>Video</span>
+          </div>
+          <div class="post-option">
+            <img src="photo.jpeg" alt="Photo" class="photo-icon-img" />
+            <span>Photo</span>
+          </div>
+          <div class="post-option">
+            <img src="article.jpeg" alt="Article" class="article-icon-img" />
+            <span>Write article</span>
+          </div>
+        </div>
+      </div>
+              <div class="linkedin-post">
+    <!-- Header -->
+    <div class="post-header">
+      <img src="prf.jpeg" alt="Profile" class="profile-img">
+      <div class="post-info">
+        <div class="name">Data Science Community (moderated)</div>
+        <div class="meta">Youcef Slimani • 3rd+ • 4h <span>🌐</span></div>
+      </div>
+    </div>
+    <!-- post Text -->
+    <div class="post-text">
+      Your dev data is lying to you. Prod data tells the truth... to solve :
+      👉 Use Realistic Data Samples
+
+Simulate production variety and volume early in development.
+👉 Automate Data Validation
+Set up checks for nulls, data types, outliers, and duplicates.
+👉 Harden ETL Pipelines
+Move from ad-hoc scripts to scheduled, monitored jobs (e.g., Airflow, dbt).
+👉 Version Control Everything
+Track code, configs, schema changes, and even sample data.
+👉 Handle Schema Drift
+Add logic to detect and gracefully handle changing data structures.
+👉 Ensure Scalability
+Test pipelines and models against full-size datasets.
+👉 Add Monitoring & Alerts
+Set up alerts for failures, data delays, anomalies, and drift.
+👉 Secure Access & Data
+Apply permissions, encryption, and audit logging for sensitive data.
+👉 Review & Document Thoroughly
+Document assumptions, get peer reviews, and prep rollback plans
+    </div>
+
+    <!-- Image -->
+    <div class="post-image">
+      <img src="ln.jpeg" alt="Data Meme">
+    </div>
+
+    <!-- Reactions -->
+    <div class="post-reactions">
+      <span>👍 ❤️ 😂</span> <span class="count">314</span>
+    </div>
+
+    <!-- Comments and shares -->
+    <div class="post-stats">
+      <span>3 comments</span> • <span>6 reposts</span>
+    </div>
+
+    <!-- actions -->
+    <div class="post-actions">
+      <button class="like-button">👍 Liked</button>
+      <button>💬 Comment</button>
+      <button>🔁 Repost</button>
+      <button>📩 Send</button>
+    </div>
+  </div>
+  <div class="post">
+    <!-- Header -->
+    <div class="block">
+      <img src="kr.jpeg" alt="Profile" style="border-radius: 50%; width: 40px;height: 40px;">
+      <div>
+        <strong>Karn Singh ✅</strong> • 2nd<br>
+        <small>Founder DroneX AI | Building AI Solutions That Maximize B2B G...</small><br>
+        <small>4h • 🌐</small>
+      </div>
+      <span style="margin-left:auto; font-size: 20px ;color: #0a66c2;"></span>
+    </div>
+
+    <!-- text -->
+    <div class="block" style="margin-top: 10px;">
+      You’re not learning AI until you’re building with it.<br><br>
+      Watching tutorials won’t get you hired. <span style="color:#0a66c2;">...more</span>
+    </div>
+
+    <!-- image -->
+    <div class="block">
+      <img src="ai.jpeg" alt="AI Projects" style="width: 100%; border-radius: 10px;">
+    </div>
+
+    <!-- reactions -->
+    <div class="block" style="font-size: 14px; color: #555;">
+      ❤️👍 <span class="count">25</span>
+    </div>
+
+    <!-- stats -->
+    <div class="block" style="font-size: 13px; color: gray;">
+      1 comment
+    </div>
+
+    <!-- actions -->
+    <div class="block" style="justify-content: space-around;cursor: pointer; border-top: 1px solid #ccc; padding-top: 10px;">
+      <span class="like-button">👍Liked</span>
+      <span>💬 Comment</span>
+      <span>🔁 Repost</span>
+      <span>📩 Send</span>
+    </div>
+  </div>
+   <div class="wrapper-box">
+    <!-- Profile Header -->
+    <div class="line-row">
+      <img src="pp.jpeg" alt="Profile" style="border-radius: 50%;width: 40px;height: 40px;">
+      <div>
+        <strong>Lukas Stangl <span style="color:#0a66c2;">🔗</span></strong> • 3rd+<br>
+        <small>Ranked #1 Austrian LinkedIn Creator | Founder of Peak Life | Growth Str...</small><br>
+        <a href="#" style="color:#0a66c2; font-size: 12px;">View my newsletter</a><br>
+        <small>3d • Edited • 🌐</small>
+      </div>
+      <span style="margin-left:auto; font-size: 16px;">Follow</span>
+    </div>
+
+    <!-- Post Text -->
+    <div class="line-row" style="margin-top: 10px;">
+      Most leaders focus on the wrong metrics.<br><br>
+      They track KPIs, analyze data, and optimize processes. <span style="color:#0a66c2;">...more</span>
+    </div>
+
+    <!-- Quote Image -->
+    <div class="line-row">
+      <img src="pr3.jpeg" alt="Quote" style="width: 100%; border-radius: 10px;">
+    </div>
+
+    <!-- Reactions -->
+    <div class="line-row" style="font-size: 14px; color: #555;cursor: pointer;">
+      ❤️👍👏 <span class="count">805</span>
+    </div>
+
+    <!-- Stats -->
+    <div class="line-row" style="font-size: 13px; color: gray;">
+      158 comments • 69 reposts
+    </div>
+
+    <!-- Actions -->
+    <div class="line-row" style="justify-content: space-around; cursor: pointer; border-top: 1px solid #ccc; padding-top: 10px;">
+      <span class="like-button">👍 Liked</span>
+      <span>💬 Comment</span>
+      <span>🔁 Repost</span>
+      <span>📩 Send</span>
+    </div>
+  </div>
+
+
+    </div>
+
+
+    <!-- Right sidebar -->
+    <div class="right-sidebar">
+      <div class="news-card">
+        <div class="news-title">LinkedIn News</div>
+         <!-- <div class="news-wrapper"> -->
+        <!-- <div class="news-card"> -->
+            <h2 id="h22">Top stories</h2>
+            <div class="news-item">
+                <p>Google Store goes live in India</p>
+                <span>8h ago • 5,061 readers</span>
+            </div>
+            <div class="news-item">
+                <p>Diagnostic firms eye smaller cities</p>
+                <span>1d ago • 314 readers</span>
+            </div>
+            <div class="news-item">
+                <p>India Inc's healthcare story</p>
+                <span>5h ago</span>
+            </div>
+            <div class="news-item">
+                <p>Fintechs scale back BNPL</p>
+                <span>6h ago</span>
+            </div>
+            <div class="news-item">
+                <p>Factory output hits 8-month low</p>
+                <span>6h ago</span>
+            </div>
+            <div class="show-more">
+                <p>Show more <i class="fa-solid fa-angle-up"></i></p>
+            </div>
+             <h2 style="line-height: 3px; margin-top: 10px; color: #00000099; font-weight: 500;" >Today's puzzle</h2>
+     <div class="puzzle-card">
+            <img  src="puzzle.jpg" alt="Zip- a quick brain teaser">
+    <pre>Zip - a quick brain teaser.
+Solve in 60s or less!
+Score is private to you.
+            </pre>
+        </div>
+      </div>
+      <div class="who-view">
+        <p>Apdesh,unlock your full potential with Linkedin 
+          Premium
+        </p>
+        <div class="pro">
+          <p>Premium</p>
+        </div>
+        <pre style="margin-left: 4px; margin-top: 10px; font-family: system-ui, -apple-system;">    See who view your profile in last 
+               365 days</pre>
+         <button>Try for free</button>      
+      </div>
+       <div class="footer-links">
+      <a href="#">About</a>
+      <a href="#">Accessibility</a>
+      <a href="#">Help Center</a>
+      <a href="#">Privacy & Terms <span>▼</span></a>
+      <a href="#">Ad Choices</a>
+      <a href="#">Advertising</a>
+      <a href="#">Business Services <span>▼</span></a>
+      <a href="#">Get the LinkedIn app</a>
+      <a href="#">More</a>
+    </div>
+
+    <div class="footer-bottom">
+      <span class="logo-text">
+        <span class="linkedin-logo">Linked<i>in</i></span>
+        LinkedIn Corporation © 2025
+      </span>
+    </div>
+    </div>
+    <script src="link.js" defer></script>
+</body>
+</html> 
+
+
+
+
+
+
+

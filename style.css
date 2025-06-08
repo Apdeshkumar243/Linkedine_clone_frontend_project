@@ -1,0 +1,848 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #f3f2ef;
+  padding-top: 60px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.logo img {
+  width: 54px;
+  height: 54px;
+  background-color: #ffffff;
+}
+
+.search {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #eef3f8;
+  border: 0.5px solid black;
+  border-radius: 8px;
+  padding: 0;
+  width: 280px;
+  height: 40px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.search i {
+  padding: 8px 10px;
+  color: #666;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: #eef3f8;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.search input {
+  width: 95%;
+  border: none;
+  background-color: #eef3f8;
+  padding: 8px 8px 8px 0;
+  font-size: 16px;
+  outline: none;
+  border-radius: 8px 8px 8px 8px;
+  color: #000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-icons {
+  display: flex;
+  margin-left: auto;
+  gap: 30px;
+}
+
+.nav-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #666;
+  cursor: pointer;
+  padding: 6px 8px;
+  transition: color 0.3s ease;
+}
+
+.nav-icon i {
+  font-size: 20px;
+  margin-bottom: 2px;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.nav-icon span {
+  font-size: 12px;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.nav-icon:hover i,
+.nav-icon:hover span {
+  color: #000;
+}
+
+/* MAIN LAYOUT */
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+/* LEFT SIDEBAR */
+.sidebar {
+  background-color: #f3f3f3;
+  width: 220px;
+  flex-shrink: 0;
+  height: 580px;
+  transition: background-color 0.3s ease;
+}
+
+#viewer1{
+  background-color: #ffffff;
+  width: 218.4px;
+  height: 80px;
+  margin-top: 10px;
+  border-radius: 10px;
+  margin-left: 1px;
+  transition: background-color 0.3s ease;
+
+}
+
+#viewer1 pre:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#viewer2{
+  margin-left: 1px;
+  background-color: #FFFFFF;
+  width: 218.4px;
+  height: 80px;
+  margin-top: 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#viewer2 img{
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 4px;
+  margin-right: 8px;
+}
+
+.icun{
+  width: 218.4px;
+  height: 160px;
+  margin-left: 1px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+
+.profile-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  border: 1px solid #e6e6e6;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.profile-header {
+  height: 54px;
+  background-image: url('iitj2.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.profile-pic {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: absolute;
+  bottom: -34px;
+  left: 25%;
+  transform: translateX(-50%);
+  background-image: url('ak.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.profile-info {
+  padding: 40px 12px 16px;
+  text-align: left;
+}
+
+.profile-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000E6;
+  margin-bottom: 4px;
+  display: flex;
+  text-align: left;
+  gap: 4px;
+  transition: color 0.3s ease;
+}
+
+.verified-icon {
+  color: #0a66c2;
+  font-size: 14px;
+  position: relative;
+  bottom: -5px;
+}
+
+.profile-title {
+  font-size: 12px;
+  color: #000000E6;
+  font-weight: 600;
+  margin-bottom: 4px;
+  line-height: 1.4;
+  transition: color 0.3s ease;
+}
+
+.profile-location {
+  font-size: 12px;
+  color: #000000E9;
+  margin-bottom: 12px;
+  transition: color 0.3s ease;
+}
+
+.company-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #000000E6;
+  transition: color 0.3s ease;
+}
+
+.company-logo {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+}
+
+.video-icon-img, .photo-icon-img, .article-icon-img {
+  width: 24px;
+  height: 24px;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  flex: 1;
+  max-width: 540px;
+}
+
+.post-composer {
+  background-color: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  border: 1px solid #e6e6e6;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.post-input-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.post-user-pic {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-image: url('ak.jpg');
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+.post-input {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #666;
+  background-color: #f9f9f9;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.post-input:hover {
+  background-color: #f3f3f3;
+}
+
+.post-options {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 8px;
+  border-top: 1px solid #e6e6e6;
+  transition: border-color 0.3s ease;
+}
+
+.post-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.post-option:hover {
+  background-color: #f3f2ef;
+}
+
+.post-option i {
+  font-size: 20px;
+}
+
+.video-icon { color: #7fc15e; }
+.photo-icon { color: #70b5f9; }
+.article-icon { color: #e7a33e; }
+
+/* RIGHT SIDEBAR */
+.right-sidebar {
+  width: 300px;
+  height: 900px;
+  overflow: unset;
+  flex-shrink: 0;
+}
+
+.news-card {
+  height: 500px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  border: 1px solid #e6e6e6;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.news-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #000000E6;
+  transition: color 0.3s ease;
+}
+
+#h22 {
+  color: #00000099;
+  font-size: 18px;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.news-item {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.news-item span {
+  font-size: 12px;
+  color: #888;
+  transition: color 0.3s ease;
+}
+
+.show-more{
+  width: 100px;
+}
+
+.show-more :hover{
+  background-color: white;
+  opacity: 0.5;
+}
+
+.puzzle-card {
+  background: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.puzzle-card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.puzzle-card img {
+  width: 90px;
+  height: 90px;
+  border-radius: 6px;
+}
+
+.puzzle-card pre{
+  font-size: 16px;
+  font-family: apple-system;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  width: 200px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  border-bottom: none;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.menu-item i {
+  font-size: 20px;
+  margin-right: 10px;
+  list-style: none;
+  transition: color 0.3s ease;
+}
+
+.who-view{
+  width: 298px;
+  height: 300px;
+  background-color: #ffffff;
+  margin-top: 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.who-view p{
+  padding: 4px 4px 4px 4px;
+  margin-left: 4px;
+  color: #00000099;
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.pro{
+  width: 5rem;
+  height: 5rem;
+  margin-top: 30px;
+  margin-left: 60px;
+  background-image: url(ak.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  display: flex;
+  text-align: center;
+}
+
+.pro p{
+  z-index: 2;
+  margin-left: 100px;
+  line-height: 10px;
+  font-size: 16px;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.who-view pre{
+  font-size: 14px;
+  color: #00000099;
+  padding-left: 40px;
+  transition: color 0.3s ease;
+}
+
+.who-view button{
+  width: 120px;
+  height: 40px;
+  color: #0a66c2;
+  margin-left: 90px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid blue;
+  background-color: transparent;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 13px;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #666;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+.footer-links span {
+  font-size: 10px;
+  margin-left: 3px;
+}
+
+.footer-bottom {
+  font-size: 13px;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.linkedin-logo {
+  color: #0a66c2;
+  font-weight: bold;
+  margin-right: 6px;
+  margin-left: 30px;
+}
+
+.linkedin-logo i {
+  font-style: normal;
+  background-color: white;
+  color: #0a66c2;
+  padding: 0 2px;
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+}
+
+.linkedin-post {
+  background-color: #fff;
+  width: 540px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  padding: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.post-info {
+  margin-left: 10px;
+}
+
+.post-info .name {
+  font-weight: bold;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.post-info .meta {
+  font-size: 12px;
+  color: gray;
+  transition: color 0.3s ease;
+}
+
+.post-text {
+  margin: 10px 0;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.post-image img {
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.post-reactions {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.post-stats {
+  font-size: 13px;
+  color: #777;
+  margin: 6px 0;
+  transition: color 0.3s ease;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  border-top: 1px solid #ddd;
+  padding-top: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.post-actions button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.post-actions button:hover {
+  color: #0a66c2;
+}
+
+.post {
+  background: #fff;
+  width: 540px;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.block {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.wrapper-box {
+  background: #fff;
+  width: 540px;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.line-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+#btnn{
+  height: 30px;
+  width: 90px;
+  background-color: #7fc15e;
+  margin-top: 10px;
+  border-radius: 20px;
+  border: 2px solid grey;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* DARK MODE STYLES */
+.dark {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.dark body {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.dark .navbar {
+  background-color: #2d2d2d;
+}
+
+.dark .search {
+  background-color: #404040;
+  border-color: #666;
+}
+
+.dark .search i {
+  background-color: #404040;
+  color: #ccc;
+}
+
+.dark .search input {
+  background-color: #404040;
+  color: #ffffff;
+}
+
+.dark .nav-icon {
+  color: #ccc;
+}
+
+.dark .nav-icon:hover i,
+.dark .nav-icon:hover span {
+  color: #ffffff;
+}
+
+.dark .sidebar {
+  background-color: #2d2d2d;
+}
+
+.dark #viewer1,
+.dark #viewer2,
+.dark .icun,
+.dark .profile-card,
+.dark .post-composer,
+.dark .news-card,
+.dark .puzzle-card,
+.dark .who-view,
+.dark .linkedin-post,
+.dark .post,
+.dark .wrapper-box {
+  background-color: #2d2d2d;
+  border-color: #404040;
+}
+
+.dark .profile-name,
+.dark .profile-title,
+.dark .profile-location,
+.dark .company-info,
+.dark .news-title,
+.dark #h22,
+.dark .news-item,
+.dark .puzzle-card h2,
+.dark .puzzle-card pre,
+.dark .menu-item,
+.dark .who-view p,
+.dark .pro p,
+.dark .who-view pre,
+.dark .post-info .name,
+.dark .post-text {
+  color: #ffffff;
+}
+
+.dark .news-item span,
+.dark .post-info .meta,
+.dark .post-reactions,
+.dark .post-stats,
+.dark .footer-links a,
+.dark .footer-bottom {
+  color: #ccc;
+}
+
+.dark .post-input {
+  background-color: #404040;
+  color: #ffffff;
+  border-color: #666;
+}
+
+.dark .post-option {
+  color: #ccc;
+}
+
+.dark .post-option:hover {
+  background-color: #404040;
+}
+
+.dark .post-options {
+  border-top-color: #404040;
+}
+
+.dark .post-actions {
+  border-top-color: #404040;
+}
+
+.dark .post-actions button {
+  color: #ccc;
+}
+
+.dark .linkedin-logo i {
+  background-color: #2d2d2d;
+}
+
+.dark .who-view button {
+  background-color: #2d2d2d;
+  border-color: #0a66c2;
+}
+
+/* LIGHT MODE STYLES */
+.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.light body {
+  background-color: #f3f2ef;
+  color: #000000;
+}
+
+.block span:hover{
+  color: #0a66c2;
+}
+.line-row span:hover{
+  color: #0a66c2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
